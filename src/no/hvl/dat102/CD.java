@@ -6,14 +6,14 @@ public class CD {
 	private String tittel;
 	private int lansering;
 	//private enum sjanger {POP, ROCK, OPERA, KLASSISK};
-	private String sjanger;
+	private Sjanger sjanger;
 	private String plateselskap;
 	
 	
 	public CD() {
 		
 	}
-	public CD(int nummer, String navn, String tittel, int lansering, String sjanger, String plateselskap) {
+	public CD(int nummer, String navn, String tittel, int lansering, Sjanger sjanger, String plateselskap) {
 		this.nummer = nummer;
 		this.navn = navn;
 		this.tittel = tittel;
@@ -41,10 +41,10 @@ public class CD {
 	public void setLansering(int lansering) {
 		this.lansering = lansering;
 	}
-	public String getSjanger() {
+	public Sjanger getSjanger() {
 		return sjanger;
 	}
-	public void setSjanger(String sjanger) {
+	public void setSjanger(Sjanger sjanger) {
 		this.sjanger = sjanger;
 	}
 	public String getPlateselskap() {

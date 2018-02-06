@@ -40,4 +40,8 @@ public class CDarkiv2 implements CDarkivADT{
 		return 0;
 	}
 	
+	public int hentAntall(Sjanger sjanger) {
+		return 0;
+	}
+	
 }

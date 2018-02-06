@@ -29,6 +29,6 @@ public interface CDarkivADT {
 	 /*
 	  *  Henter antall CD-er for en gitt sjanger
 	  */
-	// int hentAntall(String sjanger);
+	 int hentAntall(Sjanger sjanger);
 
 }
