@@ -1,26 +1,35 @@
 package no.hvl.dat102;
 
-public class LinearNode <T> {
-	private LinearNode<T> neste;
+public class LinearNode<T> {
+	public LinearNode<T> neste;
 	private T element;
-	public LinearNode() {
+	
+	public LinearNode(){
 		neste = null;
 		element = null;
 	}
-	public LinearNode(T elem) {
+	public LinearNode(T element) {
 		neste = null;
-		element = elem;
+		this.element = element;
 	}
-	public LinearNode<T> getNext() {
+
+	public LinearNode<T> getNeste() {
 		return neste;
 	}
-	public void setNext(LinearNode<T> elem) {
-		neste = elem;
+
+	public void setNeste(LinearNode<T> neste) {
+		this.neste = neste;
 	}
+
 	public T getElement() {
 		return element;
 	}
-	public void setElement(T elem) {
-		element = elem;
+
+	public void setElement(T element) {
+		this.element = element;
+	}
+	
+	public String toString() {
+		return element.toString();
 	}
 }
